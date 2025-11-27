@@ -1,0 +1,10 @@
+.row {
+    display: flex;
+}
+
+.grid {
+  border: 0.5px solid black;
+  width: max-content;
+  gap: 1px;
+  user-select: none;
+}

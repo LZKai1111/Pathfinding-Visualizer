@@ -1,0 +1,92 @@
+.top-nav {
+    color: white;
+    background-color: rgb(46, 64, 83);
+    display: flex;
+    padding: 0.5em 0 0.5em 2em;
+    height: 6em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top-nav p {    
+    font-size: 2.2em;
+}
+
+.top-nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    height: 3em;
+    border-radius: 5px;
+    min-width: 3em;
+}
+
+.top-nav button:hover {
+    background-color: #449976;
+}
+
+.top-nav button:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+}
+
+.select-algo select{
+    background: rgb(46, 64, 83);
+    color: white;
+    font-size: 1.2em;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+
+.legend-box{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+}
+
+.legend-box div {
+    display: flex;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.legend-box div * {
+    margin: 0 5px;
+    font-size: 25px;
+}
+
+.legend-wall-node {
+    background-color: rgb(46, 64, 83);
+    width: 25px;
+    height: 25px;
+}
+
+.legend-visited {
+    background: rgb(129, 129, 129);
+    width: 25px;
+    height: 25px;
+}
+
+.legened-path {
+    background: rgb(255, 255, 152);
+    width: 25px;
+    height: 25px;
+}
+
+.grid-box{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5em 0 0 0;
+}
+
+.comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}

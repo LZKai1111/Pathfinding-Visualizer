@@ -1,0 +1,60 @@
+.node {
+  width: 25px;
+  height: 25px;
+  border: 0.5px solid black;
+  display: flex;
+  font-size: 1.3em;
+  justify-content: center;
+  align-items: center;
+}
+
+.node-visited {
+  font-size: 1.3em;
+  justify-content: center;
+  align-items: center;
+  /* transition: 1s; */
+  background: rgb(129, 129, 129);
+  animation: popVisited 2s;
+}
+
+.node-path {
+  font-size: 1.3em;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 172);
+  animation: popWall 0.2s ease;
+}
+
+.node-wall {
+  background-color: rgb(46, 64, 83);
+  animation: popWall 0.2s ease;
+}
+
+
+@keyframes popWall {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes popVisited {
+  0% {
+    /* transform: scale(0.6) rotate(360deg); */
+    background: rgb(255, 255, 255)
+    
+  }
+  30% {
+    transform: scale(0.6);
+    background: rgb(122, 122, 122);
+  }
+  100% {
+    transform: scale(1);
+    background: rgb(129, 129, 129);
+  }
+}
