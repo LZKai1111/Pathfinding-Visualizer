@@ -3,16 +3,10 @@
 export const dijkstra = (grid, startNode, endNode) => {
     const visitedNodesInOrder = [];
     startNode.distance = 0;
-    // storing all nodes into array from top left to bottom right
     const unvisitedNodes = getAllNodes(grid); 
 
-    // iterate through all nodes in array
     while (unvisitedNodes.length) {
-        // sort in ascending order by distance
-        // meaning nodes with shortest distance is at the front
-        // currently all nodes except for startNode dist is infinite, with startNode.dist at 0
         unvisitedNodes.sort((a, b) => a.distance - b.distance);
-        // shift() removes first element from array and returns the removed element
         const closestNode = unvisitedNodes.shift();
 
         if (closestNode.isWall) continue;
@@ -63,7 +57,6 @@ export const getNodesInShortestPathOrder = (endNode) => {
     const nodesInShortestPathOrder = [];
     let currentNode = endNode;
     while (currentNode !== null) {
-        // unshift() adds element to beginning of array and returns length of new array
         nodesInShortestPathOrder.unshift(currentNode);
         currentNode = currentNode.previousNode;
     }
