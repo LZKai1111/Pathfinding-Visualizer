@@ -22,12 +22,8 @@ export function generateMaze(grid) {
     const height = random_int(0, grid_height-1)
     const width = random_int(0, grid_width-1)
 
-    console.log(height, width)
-
     dig_around(height, width, cloneGrid)
 
-    // console.log(cloneGrid)
-    // console.log("maze2.js", mazeOrder)
     return mazeOrder;
 }
 
